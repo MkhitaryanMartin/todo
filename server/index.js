@@ -8,8 +8,9 @@ const app = express();
 app.use(express.json())
 app.use(cors({
     origin: "https://todo-sable-three-60.vercel.app",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true
-  }));
+}));
 app.use("/todo", router)
 
 
