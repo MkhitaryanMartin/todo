@@ -6,12 +6,14 @@ const router = require("./routes/todo.js");
 const app = express();
 app.use(express.json());
 
-// Настройка CORS middleware
+
 app.use(cors({
-    origin: "https://todo-5vp3bpzog-mkhitaryanmartin.vercel.app", 
+    origin: "https://todo-sable-three-60.vercel.app",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true
 }));
+
+app.options("*", cors());
 
 app.use("/todo", router);
 
