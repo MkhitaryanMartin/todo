@@ -11,7 +11,8 @@ app.use(cors({
     origin: "https://todo-sable-three-60.vercel.app",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
-    optionsSuccessStatus: 204 // Добавьте это
+    optionsSuccessStatus: 204, // Добавьте это
+    allowedHeaders: ['Content-Type', 'Authorization'], // Добавьте это
 }));
 
 // Добавьте поддержку метода OPTIONS для предварительных запросов
