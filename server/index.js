@@ -9,7 +9,7 @@ const app = express();
 
 app.use(express.json())
 app.use(cors({
-    origin: "https://todo-jmdw.vercel.app/",
+    origin: "https://todo-jmdw.vercel.app",
     credentials: true
   }));
   app.use(cookieParser())
