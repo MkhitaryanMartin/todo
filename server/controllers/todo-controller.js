@@ -23,7 +23,6 @@ class TodoController{
         try {
             const id = req.params.id;
             const newTask = req.body;
-            console.log(id, newTask)
             const item = await TodoService.editeItem(id, newTask)
             return res.json(item)
         } catch (error) {
