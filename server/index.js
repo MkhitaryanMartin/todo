@@ -3,29 +3,29 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const router = require("./routes/todo.js");
 
-
 const app = express();
-app.use(express.json())
+app.use(express.json());
+
+
+app.options('*', cors());
+
 app.use(cors({
     origin: "https://todo-sable-three-60.vercel.app",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true
 }));
-app.use("/todo", router)
 
-
+app.use("/todo", router);
 
 const PORT = process.env.PORT || 5000;
 
-const start = async ()=>{
-
+const start = async () => {
     try {
-        await mongoose.connect(process.env.MONGODB_URI)
-        app.listen(PORT, ()=> console.log(`SERVER run in ${PORT} port`))
-        
+        await mongoose.connect(process.env.MONGODB_URI);
+        app.listen(PORT, () => console.log(`SERVER run in ${PORT} port`));
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
-}
+};
 
-start()
+start();
