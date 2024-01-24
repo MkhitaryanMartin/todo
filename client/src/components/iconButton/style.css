@@ -1,0 +1,25 @@
+.icon-button {
+    padding: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    transition: background-color 0.3s ease;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+
+.icon-button:active{
+    scale: 0.5;
+    background: #536872;
+}
+.icon-button:hover{
+    background: #E7E8E9;
+}
+

@@ -1,0 +1,21 @@
+.Input__container{
+  width: 250px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1px;
+}
+.Input {
+  font-size: 16px;
+  padding: 2px;
+}
+
+.Input_theme_big {
+  width: 300px;
+}
+
+.Input__error-text{
+  color: red;
+  margin-top: 10px;
+}

@@ -1,0 +1,30 @@
+.List-item{
+    border: 1px solid gray;
+    margin: 5px 0;
+    padding: 10px 1%;
+}
+.List-item, .List-item__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.List-item__status{
+    margin-right: 15px;
+ text-align: center;
+ min-width: 120px;
+}
+.List-item__task {
+    margin: 0 25px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
+@media screen and (max-width: 600px) {
+   .List-item{
+    flex-direction: column;
+   }
+   .List-item__task {
+    margin: 10px 0;
+}
+}

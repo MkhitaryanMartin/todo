@@ -1,0 +1,19 @@
+.Item-form{
+    width: 100%;
+}
+.Item-form__block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+
+.Item-form__title{
+    text-align: center;
+    margin: 30px 0 10px 0;
+}
+.Item-form button{
+    margin-left: 20px;
+}
