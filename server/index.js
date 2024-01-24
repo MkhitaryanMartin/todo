@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 5000;
 const start = async ()=>{
 
     try {
-        await mongoose.connect(process.env.MONGODB_CONECT_URL)
+        await mongoose.connect(process.env.MONGODB_URI)
         app.listen(PORT, ()=> console.log(`SERVER run in ${PORT} port`))
         
     } catch (error) {
