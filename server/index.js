@@ -6,7 +6,10 @@ const router = require("./routes/todo.js");
 
 const app = express();
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: "https://todo-sable-three-60.vercel.app/",
+    credentials: true
+  }));
 app.use("/todo", router)
 
 
